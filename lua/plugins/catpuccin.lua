@@ -4,7 +4,8 @@ return {{
     priority = 1000,
     config = function()
         require("catppuccin").setup({
-            auto_integrations = true
+            auto_integrations = true,
+            term_colors = true
         })
         vim.cmd.colorscheme "catppuccin"
     end
