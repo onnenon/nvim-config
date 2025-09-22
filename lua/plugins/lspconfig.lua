@@ -1,10 +1,11 @@
 return {
-    "neovim/nvim-lspconfig",
-    opts = {
-        setup = {
-            hls = function()
-                return true
-            end
-        }
-    }
+  "neovim/nvim-lspconfig",
+  opts = {
+    servers = {
+      hls = {
+        mason = false,
+        enabled = false,
+      },
+    },
+  },
 }
